@@ -168,8 +168,19 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📚 Knowledge base status: ${Object.keys(portfolioKnowledge).length > 0 ? '✅ Loaded' : '❌ Not loaded'}`);
-  console.log(`🎯 Projects loaded: ${projectInfo.projects?.length || 0}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running on port ${PORT}`);
+//   console.log(`📚 Knowledge base status: ${Object.keys(portfolioKnowledge).length > 0 ? '✅ Loaded' : '❌ Not loaded'}`);
+//   console.log(`🎯 Projects loaded: ${projectInfo.projects?.length || 0}`);
+// });
+
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`📚 Knowledge base status: ${Object.keys(portfolioKnowledge).length > 0 ? '✅ Loaded' : '❌ Not loaded'}`);
+    console.log(`🎯 Projects loaded: ${projectInfo.projects?.length || 0}`);
+  });
+}
+
+// Export for Vercel serverless
+export default app;
