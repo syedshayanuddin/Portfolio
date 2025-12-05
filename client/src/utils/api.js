@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5001',  // Just the base URL
+  baseURL: import.meta.env.VITE_API_URL || 'https://portfolio-backend-theta-red.vercel.app',
   headers: {
     'Content-Type': 'application/json',
   },
