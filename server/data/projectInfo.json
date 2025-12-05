@@ -1,0 +1,302 @@
+{
+  "projects": [
+    {
+      "id": "interviewaide",
+      "name": "InterviewAIde",
+      "tagline": "AI-Powered Interview Preparation Platform",
+      "type": "AI/ML Project",
+      "status": "Completed",
+      "date": "December 2024",
+      "duration": "2 weeks",
+      "github": "https://github.com/yourusername/interviewaide",
+      "demo": null,
+      "description": "Developed an AI-powered platform that simulates personalized interview sessions based on user resumes. The system uses fine-tuned LLMs to generate tailored questions and provide real-time feedback.",
+      "problem_statement": "Job seekers struggle with interview preparation due to lack of personalized practice and feedback. Generic interview questions don't match their specific experience and job profiles.",
+      "solution": "Built an intelligent interview coaching system that analyzes user resumes, identifies key skills and experiences, and generates personalized interview questions using fine-tuned language models. The system provides contextual feedback and improvement suggestions.",
+      "key_features": [
+        "Resume parsing and analysis using JavaScript backend",
+        "Fine-tuned open-source LLM for domain-specific question generation",
+        "Personalized interview sessions tailored to user profile",
+        "Real-time AI-driven feedback and coaching",
+        "Question difficulty adaptation based on user responses",
+        "Interview performance analytics and insights"
+      ],
+      "technical_implementation": {
+        "llm_finetuning": "Fine-tuned an open-source language model on interview question datasets with specific focus on technical and behavioral questions",
+        "resume_parsing": "Implemented JavaScript-based resume parser to extract skills, experience, and qualifications",
+        "question_generation": "Used the fine-tuned LLM with prompt engineering to generate contextually relevant questions",
+        "feedback_system": "Developed AI evaluation system to assess answers and provide constructive feedback"
+      },
+      "technologies": [
+        "Python",
+        "JavaScript",
+        "Machine Learning",
+        "NLP",
+        "LLM Fine-tuning",
+        "Transformers",
+        "FastAPI",
+        "React"
+      ],
+      "challenges_solved": [
+        "Fine-tuning LLMs with limited computational resources",
+        "Extracting structured data from diverse resume formats",
+        "Generating diverse and relevant interview questions",
+        "Providing meaningful feedback without over-prompting the LLM"
+      ],
+      "impact": "Helps job seekers prepare for interviews with AI-powered personalized coaching, improving their confidence and performance.",
+      "learning_outcomes": [
+        "LLM fine-tuning techniques and best practices",
+        "Advanced NLP and text processing",
+        "Resume parsing and information extraction",
+        "Prompt engineering for specific use cases",
+        "Building AI-powered interactive applications"
+      ]
+    },
+    {
+      "id": "novelflow",
+      "name": "NovelFlow",
+      "tagline": "AI-Powered Chinese-English Novel Translation Pipeline",
+      "type": "AI/ML Project",
+      "status": "Completed",
+      "date": "November 2024",
+      "duration": "3 weeks",
+      "github": null,
+      "demo": null,
+      "description": "Built a comprehensive cloud-native translation pipeline for Chinese web novels using Google's Gemini API with RAG-based context retrieval and automated glossary management for consistent, high-quality translations.",
+      "problem_statement": "Translating Chinese web novels manually is time-consuming and maintaining consistency across hundreds of chapters (character names, cultivation terms, places) is extremely challenging.",
+      "solution": "Created an automated translation system that uses cloud-native AI (Gemini 2.5) with RAG for context awareness, automated glossary extraction, entity verification, and multi-stage polishing to produce publication-ready translations.",
+      "key_features": [
+        "Cloud-native translation using Gemini 2.5 Flash and Pro models",
+        "RAG-based context retrieval using FAISS vector database",
+        "Automated glossary extraction and management for consistency",
+        "Intelligent chapter splitting and processing",
+        "Entity verification using Perplexity API",
+        "Translation polishing pipeline for natural English",
+        "Multi-format export (TXT, DOCX, EPUB)",
+        "Streamlit web interface for easy novel processing"
+      ],
+      "technical_implementation": {
+        "architecture": "Cloud-native pipeline with modular components for ingestion, splitting, translation, polishing, and export",
+        "rag_system": "Used Sentence Transformers for embeddings and FAISS for efficient similarity search to retrieve relevant context",
+        "glossary_management": "Automatic extraction of character names, places, cultivation terms with category-based translation rules",
+        "translation_engine": "Leveraged Gemini 2.5 Flash for fast translation and Pro for quality polishing",
+        "context_awareness": "Maintains consistency by feeding previous chapter summaries and entity glossaries to the LLM"
+      },
+      "technologies": [
+        "Python",
+        "Google Gemini API",
+        "RAG (Retrieval Augmented Generation)",
+        "Streamlit",
+        "FAISS",
+        "Sentence Transformers",
+        "NLP",
+        "Perplexity API",
+        "Document Processing"
+      ],
+      "technical_components": {
+        "ingest.py": "Document text extraction from PDF, TXT, EPUB formats",
+        "splitter.py": "Intelligent chapter splitting with title detection",
+        "glossary.py": "Entity extraction and glossary management",
+        "embeddings.py": "Vector embeddings and FAISS-based retrieval",
+        "translator.py": "Cloud translation engine with Gemini API",
+        "polisher.py": "Translation refinement for naturalness",
+        "verifier.py": "Entity verification using external APIs",
+        "exporter.py": "Multi-format export functionality",
+        "storage.py": "Persistent storage management",
+        "app.py": "Streamlit UI orchestrating the entire pipeline"
+      },
+      "challenges_solved": [
+        "Maintaining character name consistency across long novels",
+        "Handling cultural nuances and xianxia/wuxia genre terminology",
+        "Context window limitations with very long chapters",
+        "Rate limiting with cloud API calls",
+        "Building efficient RAG system for fast context retrieval"
+      ],
+      "impact": "Automates hours of manual translation work while maintaining consistency and quality, enabling faster publication of web novels.",
+      "learning_outcomes": [
+        "Building production-ready RAG systems",
+        "Working with cloud-native AI APIs (Gemini)",
+        "Vector databases and similarity search (FAISS)",
+        "Complex NLP pipelines and workflows",
+        "Document processing and export",
+        "Building user-friendly Streamlit applications"
+      ]
+    },
+    {
+      "id": "cravory",
+      "name": "Cravory",
+      "tagline": "Your Ultimate Recipe Companion",
+      "type": "Full-stack Project",
+      "status": "Completed & Deployed",
+      "date": "September 2024",
+      "duration": "2 weeks",
+      "github": "https://github.com/syedshayanuddin/cravoryy",
+      "demo": "https://cravoryy.vercel.app",
+      "description": "Modern, interactive recipe discovery app that helps users find meals based on ingredients they have, their mood, or with a random surprise. Built with React, TypeScript, and TailwindCSS with smooth animations and API-driven recipe data.",
+      "problem_statement": "People often don't know what to cook with available ingredients or can't decide what meal matches their current mood or craving.",
+      "solution": "Created an intuitive recipe app with multiple discovery modes - ingredient-based search, mood-based recommendations, time-based filtering, and random recipe generator for culinary inspiration.",
+      "key_features": [
+        "Ingredient-based search to find recipes using available items",
+        "Mood-based discovery (Comfort, Healthy & Fresh, Spicy, Sweet, International, Quick & Light)",
+        "Random recipe generator for surprise meal ideas",
+        "Time filter (15 min, 30 min, 1 hour, Any time)",
+        "Favorites system to save preferred recipes",
+        "Detailed recipe view with ingredients and step-by-step instructions",
+        "YouTube video tutorials when available",
+        "Modern UI with smooth animations and transitions",
+        "Responsive design for all devices"
+      ],
+      "technical_implementation": {
+        "frontend": "Built with React and TypeScript for type safety and maintainability",
+        "styling": "TailwindCSS for modern, responsive design with custom animations",
+        "api_integration": "TheMealDB API for comprehensive recipe database",
+        "state_management": "React hooks for local state and favorites management",
+        "animations": "Custom CSS animations including animated pan on landing page",
+        "build_tool": "Vite for fast development and optimized production builds"
+      },
+      "technologies": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Vite",
+        "TheMealDB API",
+        "JavaScript ES6+",
+        "Responsive Design"
+      ],
+      "challenges_solved": [
+        "Creating smooth, performant animations",
+        "Filtering and searching large recipe datasets efficiently",
+        "Building intuitive mood-based categorization",
+        "Implementing favorites with localStorage persistence",
+        "Responsive design across various screen sizes"
+      ],
+      "impact": "Makes cooking fun and effortless by helping users discover new recipes based on what they have or how they feel.",
+      "learning_outcomes": [
+        "TypeScript for type-safe React development",
+        "Advanced TailwindCSS techniques and animations",
+        "API integration and data handling",
+        "State management patterns in React",
+        "Building delightful user experiences"
+      ]
+    },
+    {
+      "id": "college-management",
+      "name": "College Management System",
+      "tagline": "Comprehensive Management Platform for MJCET",
+      "type": "Full-stack Project",
+      "status": "Completed",
+      "date": "January - March 2024",
+      "duration": "3 months",
+      "github": "https://github.com/yourusername/college-management",
+      "demo": null,
+      "description": "Enterprise-level web application to digitize and streamline student attendance management for Muffakham Jah College of Engineering and Technology with dual authentication portals and real-time analytics.",
+      "problem_statement": "Manual attendance tracking was time-consuming, error-prone, and lacked real-time insights for both students and faculty at MJCET.",
+      "solution": "Built a comprehensive digital platform with role-based access for students and faculty, automated attendance workflows, real-time dashboards, and analytics for better decision-making.",
+      "key_features": [
+        "Dual authentication system for students and faculty",
+        "Personalized dashboards with real-time attendance tracking",
+        "Automated attendance recording and management",
+        "Analytics and reporting features for faculty",
+        "Student portal to view attendance records and alerts",
+        "Faculty portal for marking and managing attendance",
+        "Low attendance notifications and alerts",
+        "Export attendance reports in multiple formats",
+        "Secure authentication and authorization",
+        "Responsive design for mobile and desktop"
+      ],
+      "technical_implementation": {
+        "backend": "Node.js with Express.js for RESTful API development",
+        "frontend": "EJS templating for server-side rendering",
+        "database": "MongoDB for flexible document storage",
+        "authentication": "JWT-based authentication with role-based access control",
+        "architecture": "MVC pattern for organized code structure"
+      },
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "EJS",
+        "MongoDB",
+        "Mongoose",
+        "JWT Authentication",
+        "REST API",
+        "HTML/CSS",
+        "JavaScript"
+      ],
+      "challenges_solved": [
+        "Designing scalable database schema for academic data",
+        "Implementing secure role-based access control",
+        "Real-time data synchronization across portals",
+        "Handling large datasets efficiently",
+        "Creating intuitive interfaces for non-technical users"
+      ],
+      "impact": "Digitized attendance management for hundreds of students, saving countless hours of manual work and providing valuable insights.",
+      "learning_outcomes": [
+        "Full-stack web development with Node.js",
+        "Database design and optimization",
+        "User authentication and authorization",
+        "Building enterprise-level applications",
+        "RESTful API design and implementation"
+      ]
+    },
+    {
+      "id": "ai-portfolio",
+      "name": "AI Portfolio Website",
+      "tagline": "Interactive Portfolio with Conversational AI Clone",
+      "type": "Current Project",
+      "status": "In Progress",
+      "date": "December 2024",
+      "duration": "Ongoing",
+      "github": null,
+      "demo": null,
+      "description": "Modern, interactive portfolio website featuring a conversational AI clone powered by LLMs and RAG for intelligent responses about projects, skills, and experience. Built with React, Node.js, and Groq API.",
+      "problem_statement": "Traditional portfolios are static and don't engage visitors. Recruiters and visitors often have specific questions that aren't addressed on the page.",
+      "solution": "Created an interactive portfolio with an AI clone that can answer questions about projects, skills, experience, and availability using RAG-based knowledge retrieval from a curated knowledge base.",
+      "key_features": [
+        "Conversational AI clone powered by Groq's LLM API",
+        "RAG-based knowledge retrieval for accurate responses",
+        "Real-time chat interface with smooth UX",
+        "Section-by-section snap navigation",
+        "Modern responsive design with TailwindCSS",
+        "Smooth animations and transitions",
+        "Project showcase with interactive carousel",
+        "Clickable certification badges",
+        "Contact form with social media integration",
+        "Hidden scrollbars for clean aesthetic"
+      ],
+      "technical_implementation": {
+        "frontend": "React with Vite for fast development and optimized builds",
+        "backend": "Node.js/Express API server handling chat requests",
+        "ai_integration": "Groq API with llama3-8b-8192 model for conversational responses",
+        "rag_system": "Knowledge base stored in JSON files with context injection",
+        "styling": "TailwindCSS with custom animations and gradients",
+        "architecture": "Client-server architecture with RESTful API communication"
+      },
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "Groq API",
+        "RAG",
+        "Vite",
+        "TailwindCSS",
+        "JavaScript ES6+",
+        "REST API"
+      ],
+      "challenges_solved": [
+        "Integrating LLM API with portfolio data",
+        "Building efficient RAG system for context retrieval",
+        "Creating smooth section-by-section navigation",
+        "Designing intuitive chat interface without scrolling issues",
+        "Optimizing API calls and response times"
+      ],
+      "impact": "Provides an engaging, interactive experience for recruiters and visitors, showcasing both technical skills and creativity.",
+      "learning_outcomes": [
+        "Working with LLM APIs (Groq)",
+        "Implementing RAG systems",
+        "Building conversational interfaces",
+        "Advanced React patterns",
+        "Full-stack integration"
+      ]
+    }
+  ]
+}

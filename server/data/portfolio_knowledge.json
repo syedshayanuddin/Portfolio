@@ -1,0 +1,150 @@
+{
+  "personal_info": {
+    "name": "Syed Shayan Uddin",
+    "favourite cricketer": "Virat Kohli",
+    "title": "AI/ML Engineer & Full-stack Developer",
+    "location": "Hyderabad, India",
+    "email": "shayanuddinsd@gmail.com",
+    "phone": "+91 ****",
+    "github": "https://github.com/syedshayanuddin",
+    "linkedin": "https://www.linkedin.com/in/syed-shayan-uddin-5753a1321",
+    "availability": "Available for AI/ML and Software Development roles (Remote/Hybrid/Onsite)",
+    "bio": "Dynamic AI/ML Engineer with hands-on experience in building AI-powered applications, web platforms, and intelligent systems. Passionate about machine learning, generative AI, and creating seamless user experiences. Currently pursuing B.E. in Artificial Intelligence and Machine Learning at MJCET with 8.6 GPA. Oracle certified in AI Foundations, Generative AI, and Data Science.",
+    "interests": [
+      "Artificial Intelligence & Machine Learning",
+      "Natural Language Processing",
+      "Large Language Models",
+      "Generative AI",
+      "Full-stack Web Development",
+      "Cloud Computing",
+      "Deep Learning",
+      "Computer Vision"
+    ]
+  },
+  "education": {
+    "degree": "Bachelor of Engineering in Artificial Intelligence & Machine Learning",
+    "university": "Muffakham Jah College of Engineering and Technology (MJCET)",
+    "school": "Narayana High School",
+    "Junior college": "Narayana Junior College",
+    "location": "Hyderabad, Telangana, India",
+    "duration": "2022 - Present (Expected graduation: 2026)",
+    "gpa": "8.6 / 10.0",
+    "Junior College Percentage": "96%",
+    "relevant_coursework": [
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Data Structures & Algorithms",
+      "Database Management Systems",
+      "Cloud Computing",
+      "Software Engineering"
+    ],
+    "academic_achievements": [
+      "Merit Certificate 2024, 2025 - Highest SGPA in semester",
+      "Top Academic Achievement Honor 2020",
+      "Best Student Award 2020",
+      "10.0 CGPA in High School (2010-2020)"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      "issuer": "Oracle",
+      "date": "2025",
+      "credential_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=DC18E4F9A1F6ED2FD0B902EF94804A6DFFBF370990340A4ACD475A3488AF1A6D",
+      "skills": ["AI Fundamentals", "Machine Learning Basics", "Oracle Cloud Infrastructure"]
+    },
+    {
+      "name": "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+      "issuer": "Oracle",
+      "date": "2025",
+      "credential_url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=4971F07FD49876A038A9A51B30C8ADF7A7DB64F5225C02B9EDA9B5A395BE4D34",
+      "skills": ["Generative AI", "LLMs", "Prompt Engineering", "AI Applications"]
+    },
+    {
+      "name": "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+      "issuer": "Oracle",
+      "date": "2025",
+      "credential_url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=530F3BB60E10CA4294A38AA01E20EAF88898FA6E0AEC09EEF7167A6B2718627A",
+      "skills": ["Data Science", "Statistical Analysis", "ML Pipelines", "Model Deployment"]
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "SQL",
+      "Swift",
+      "HTML/CSS"
+    ],
+    "ai_ml_frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Hugging Face Transformers",
+      "LangChain",
+      "FAISS",
+      "Sentence Transformers"
+    ],
+    "web_technologies": {
+      "frontend": ["React.js", "TypeScript", "TailwindCSS", "Vite", "EJS"],
+      "backend": ["Node.js", "Express.js", "FastAPI", "Streamlit"],
+      "databases": ["MongoDB", "MySQL", "PostgreSQL"]
+    },
+    "ai_apis_tools": [
+      "OpenAI API",
+      "Groq API",
+      "Gemini API",
+      "Perplexity API",
+      "Oracle Cloud Infrastructure"
+    ],
+    "tools_platforms": [
+      "Git & GitHub",
+      "VS Code",
+      "Docker",
+      "Postman",
+      "Jupyter Notebook",
+      "Google Colab"
+    ],
+    "core_competencies": [
+      "Machine Learning & Deep Learning",
+      "Natural Language Processing",
+      "Large Language Model Fine-tuning",
+      "RAG (Retrieval Augmented Generation)",
+      "Full-stack Web Development",
+      "REST API Development",
+      "Database Design",
+      "Cloud Computing",
+      "Problem Solving & Algorithms"
+    ]
+  },
+  "soft_skills": [
+    "Team Collaboration",
+    "Fast Learner",
+    "Problem Solving",
+    "Time Management",
+    "Creative Thinking",
+    "Adaptability",
+    "Communication"
+  ],
+  "work_preferences": {
+    "looking_for": [
+      "AI/ML Engineer positions",
+      "Software Developer roles",
+      "Full-stack Developer opportunities",
+      "Machine Learning Internships",
+      "AI Research positions"
+    ],
+    "work_type": "Open to Remote, Hybrid, and Onsite opportunities",
+    "interests": [
+      "Working with LLMs and Generative AI",
+      "Building intelligent systems",
+      "Full-stack development with modern frameworks",
+      "NLP and text processing applications",
+      "Computer Vision projects",
+      "Cloud-native AI solutions"
+    ]
+  }
+}
