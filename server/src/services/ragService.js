@@ -16,11 +16,9 @@ function searchKnowledge(query) {
   const lowerQuery = query.toLowerCase();
   
   let relevantInfo = [];
- // Check for informal queries
-  if (lowerQuery.includes('cricketer') || lowerQuery.includes('favourite cricketer')) {
-    relevantInfo.push(`Personal Info:\n${JSON.stringify(knowledge.personal_info, null, 2)}`);
-  }
-  
+  // Always include personal info (it's lightweight)
+      relevantInfo.push(`Personal Info:\n${JSON.stringify(knowledge.personal_info, null, 2)}`);
+
   // Check for project queries
   if (lowerQuery.includes('project') || lowerQuery.includes('built') || lowerQuery.includes('work')) {
     relevantInfo.push(`Projects:\n${JSON.stringify(knowledge.projects, null, 2)}`);
