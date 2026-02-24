@@ -57,6 +57,7 @@ PERSONAL INFORMATION:
 - GitHub: ${personal.github || 'https://github.com/syedshayanuddin'}
 - LinkedIn: ${personal.linkedin || 'https://www.linkedin.com/in/syed-shayan-uddin-5753a1321'}
 - Availability: ${personal.availability || 'Available for AI/ML and Software Development roles'}
+- Favourite Cricketer: ${personal["favourite cricketer"] || 'Not specified'}
 
 BIO:
 ${personal.bio || 'AI/ML Engineer passionate about building intelligent systems.'}
