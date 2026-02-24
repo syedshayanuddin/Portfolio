@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import fs from 'fs';
 
+
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -39,7 +40,7 @@ try {
   console.error('❌ Error loading knowledge base:', error.message);
 }
 
-// Create system prompt with knowledge
+//Create system prompt with knowledge
 function createSystemPrompt() {
   const projects = projectInfo.projects || [];
   const personal = portfolioKnowledge.personal_info || {};
@@ -102,7 +103,7 @@ INSTRUCTIONS:
 Remember: You represent Shayan professionally. Be helpful, accurate, and protect his privacy.`;
 }
 
-// Chat endpoint
+
 // Chat endpoint
 app.post('/api/chat', async (req, res) => {
   try {
@@ -183,5 +184,6 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
+console.log("OPENAI KEY EXISTS:", !!process.env.OPENAI_API_KEY);
 // Export for Vercel serverless
 export default app;
