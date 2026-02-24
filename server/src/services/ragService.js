@@ -16,35 +16,22 @@ function searchKnowledge(query) {
   const lowerQuery = query.toLowerCase();
   
   let relevantInfo = [];
-  // Always include personal info (it's lightweight)
-      relevantInfo.push(`Personal Info:\n${JSON.stringify(knowledge.personal_info, null, 2)}`);
 
-  // Check for project queries
-  if (lowerQuery.includes('project') || lowerQuery.includes('built') || lowerQuery.includes('work')) {
+  // Always include personal info
+  relevantInfo.push(`Personal Info:\n${JSON.stringify(knowledge.personal_info, null, 2)}`);
+
+  if (lowerQuery.includes('project')) {
     relevantInfo.push(`Projects:\n${JSON.stringify(knowledge.projects, null, 2)}`);
   }
-  
-  // Check for skills queries
-  if (lowerQuery.includes('skill') || lowerQuery.includes('tech') || lowerQuery.includes('know') || lowerQuery.includes('language')) {
+
+  if (lowerQuery.includes('skill') || lowerQuery.includes('tech')) {
     relevantInfo.push(`Skills:\n${JSON.stringify(knowledge.skills, null, 2)}`);
   }
-  
-  // Check for about/bio queries
-  if (lowerQuery.includes('about') || lowerQuery.includes('who') || lowerQuery.includes('background') || lowerQuery.includes('shayan')) {
-    relevantInfo.push(`About:\n${JSON.stringify(knowledge.about, null, 2)}`);
-  }
 
-  // Check for experience queries
-  if (lowerQuery.includes('experience') || lowerQuery.includes('work')) {
+  if (lowerQuery.includes('experience')) {
     relevantInfo.push(`Experience:\n${JSON.stringify(knowledge.experience, null, 2)}`);
   }
 
-  // If no specific match, return general info
-  if (relevantInfo.length === 0) {
-    relevantInfo.push(`General Info:\n${JSON.stringify(knowledge.about, null, 2)}`);
-  }
-
-  
   return relevantInfo.join('\n\n');
 }
 
