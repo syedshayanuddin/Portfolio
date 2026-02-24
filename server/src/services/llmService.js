@@ -30,7 +30,9 @@ Here is relevant information about Shayan from his portfolio:
 ${relevantContext}
 
 Use this context to answer questions accurately. Only share information that's relevant to the question.`;
-
+console.log("======== RELEVANT CONTEXT ========");
+console.log(relevantContext);
+console.log("==================================");
     const completion = await groq.chat.completions.create({
       model: 'llama-3.3-70b-versatile',  // Updated to current model
       messages: [
@@ -47,10 +49,5 @@ Use this context to answer questions accurately. Only share information that's r
     throw new Error('Failed to generate AI response');
   }
 }
-
-console.log("========== CONTEXT SENT TO GROQ ==========");
-console.log(relevantContext);
-console.log("===========================================");
-
 
 module.exports = { chat };
