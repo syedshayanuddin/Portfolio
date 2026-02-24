@@ -41,6 +41,11 @@ function searchKnowledge(query) {
   if (relevantInfo.length === 0) {
     relevantInfo.push(`General Info:\n${JSON.stringify(knowledge.about, null, 2)}`);
   }
+
+  // Check for informal queries
+  if (lowerQuery.includes('cricketer') || lowerQuery.includes('favourite cricketer')) {
+    relevantInfo.push(`General Info:\n${JSON.stringify(knowledge.personal_info, null, 2)}`);
+  }
   
   return relevantInfo.join('\n\n');
 }
