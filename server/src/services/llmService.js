@@ -48,4 +48,9 @@ Use this context to answer questions accurately. Only share information that's r
   }
 }
 
+console.log("========== CONTEXT SENT TO GROQ ==========");
+console.log(relevantContext);
+console.log("===========================================");
+
+
 module.exports = { chat };
