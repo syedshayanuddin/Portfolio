@@ -8,7 +8,7 @@ function Skills() {
       { name: "Machine Learning", level: 90 },
       { name: "Generative AI", level: 85 },
       { name: "NLP", level: 88 },
-      { name: "LLM Fine-tuning", level: 82 },
+      //{ name: "LLM Fine-tuning", level: 82 },
       { name: "RAG Systems", level: 85 },
       { name: "Python (AI/ML)", level: 90 },
     ],
@@ -22,7 +22,7 @@ function Skills() {
     ],
     "Cloud & APIs": [
       { name: "Oracle Cloud (OCI)", level: 85 },
-      { name: "Gemini API", level: 88 },
+      //{ name: "Gemini API", level: 88 },
       { name: "Streamlit", level: 80 },
       { name: "Git & GitHub", level: 88 },
       { name: "REST APIs", level: 85 },

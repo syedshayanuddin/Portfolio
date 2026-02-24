@@ -4,7 +4,7 @@ function About() {
       degree: "B.E. in Artificial Intelligence & Machine Learning",
       school: "Muffakham Jah College of Engineering and Technology",
       period: "2022 - Present",
-      gpa: "8.6 GPA",
+      gpa: "8.9 GPA",
       location: "Hyderabad, India"
     }
   ];
