@@ -64,9 +64,9 @@ ${personal.bio || 'AI/ML Engineer passionate about building intelligent systems.
 EDUCATION:
 - Degree: ${education.degree || 'B.E. in AI & ML'}
 - University: ${education.university || 'MJCET'}
-- GPA: ${education.gpa || '8.6/10'}
+- GPA: ${education.gpa || '8.9/10'}
 - Duration: ${education.duration || '2022-Present'}
-
+ 
 CERTIFICATIONS:
 ${certifications.map(cert => `- ${cert.name} (${cert.issuer})`).join('\n')}
 
